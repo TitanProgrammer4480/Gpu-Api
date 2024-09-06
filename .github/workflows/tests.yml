@@ -13,7 +13,7 @@ jobs:
                 python-version: '3.x'
             - name: Install dependencies
               run: | 
-                python -m pip il --upgrade pip
+                python -m pip i --upgrade pip
                 pip i -r requirements.txt
             - name: Test main.py
               run: |
