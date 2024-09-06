@@ -2,19 +2,24 @@ name: Tests & Setup
 
 on: [push]
 jobs:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-        - uses: actions/checkout@v4
-        - name: Set up Python
-            uses: actions/setup-python@v5
-            with:
+        steps:
+            - uses: actions/checkout@v4
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
                 python-version: '3.x'
-        - name: Install dependencies
-            run: | 
-                python -m pip install --upgrade pip
-                pip install -r requirements.txt
-                pip install pytest pytest-cov ruff
+            - name: Install dependencies
+              run: | 
+                python -m pip il --upgrade pip
+                pip i -r requirements.txt
+            - name: Test main.py
+              run: |
+                pip i pytest pytest-cov
                 pytest main.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+            - name:
+              run: |
+                pip i ruff
                 ruff check --output-format=github .
-            continue-on-error: true
