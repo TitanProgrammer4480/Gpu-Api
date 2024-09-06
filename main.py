@@ -1,5 +1,5 @@
 from flask import Flask, jsonify
-from web_scraping_GPU import get_price
+from functions.web_scraping_GPU import get_price
 
 app = Flask(__name__)
 
