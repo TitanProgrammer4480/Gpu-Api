@@ -13,13 +13,13 @@ jobs:
                 python-version: '3.x'
             - name: Install dependencies
               run: | 
-                python -m pip i --upgrade pip
-                pip i -r requirements.txt
+                python -m pip install --upgrade pip
+                pip install -r requirements.txt
             - name: Test main.py
               run: |
-                pip i pytest pytest-cov
+                pip install pytest pytest-cov
                 pytest main.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
-            - name:
+            - name: Lint
               run: |
-                pip i ruff
+                pip install ruff
                 ruff check --output-format=github .
