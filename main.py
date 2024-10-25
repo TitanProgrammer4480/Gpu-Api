@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 from functions.web_scraping_GPU import get_price
 
 app = Flask(__name__)
