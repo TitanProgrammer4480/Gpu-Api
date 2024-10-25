@@ -2,6 +2,12 @@
 {% block title %}GPU Api{% endblock %}
 {% block content %}
     <h1>GPU Api</h1>
+    <form type="post">
+        <input type="text" name="search_term"></input>
+    </form>
+    {{ for i in results }}
+        <p>{{ i }}</p>
+    {{ endfor }}
 {% endblock %}
 {% block styles %}
 {% endblock %}
