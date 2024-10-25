@@ -9,7 +9,8 @@ def home():
         search_term = request.form["search_term"]
         results = get_price(search_term)
         return render_template("home.html", results=results)
-    return render_template("home.html")
+    results=[]
+    return render_template("home.html", results=results)
 
 @app.route("/api/gpu/price/<gpu>")
 def gpu_price(gpu):
