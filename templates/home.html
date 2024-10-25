@@ -5,9 +5,9 @@
     <form type="post">
         <input type="text" name="search_term"></input>
     </form>
-    {{ for i in results }}
+    {% for i in results %}
         <p>{{ i }}</p>
-    {{ endfor }}
+    {% endfor %}
 {% endblock %}
 {% block styles %}
 {% endblock %}
