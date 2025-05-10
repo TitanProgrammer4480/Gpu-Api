@@ -37,7 +37,7 @@ This is a Python-based API that scrapes **Newegg.ca** for the latest GPU prices.
 
 ## 📡 API Endpoints
 ### GPU Price Endpoint
-GET /api/gpu-prices – Fetches the latest GPU prices from Newegg.ca.
+GET /api/gpu/price/<model-name> – Fetches the latest GPU prices from Newegg.ca.
 
 ### 📤 Deployment
 This API is deployed on Vercel, offering automatic deployments on every push to the main branch.
