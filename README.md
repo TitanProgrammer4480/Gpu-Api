@@ -24,15 +24,14 @@ This is a Python-based API that scrapes **Newegg.ca** for the latest GPU prices.
    ```
   
 2. Install dependencies:
-´´´bash
-pip install -r requirements.txt
-´´´
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Run the Flask application:
-
-```bash
-python app.py
-```
+   ```bash
+   python app.py
+   ```
 
 4. Open http://localhost:5000 to access the API locally.
 
